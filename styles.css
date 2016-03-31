@@ -75,3 +75,80 @@ aside {
 
 /* Layout: */
 
+header {
+    text-align: center;
+}
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+header nav li {
+    display: inline-block;
+    padding: 1em;
+}
+
+
+
+header .content,
+main .content,
+footer .content {
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+
+
+.features section,
+footer section {
+    float: left;
+    width: 30%;
+    margin: 1em 1.6666666666667%;
+}
+
+
+
+main,
+footer {
+    clear: both;
+    overflow: auto;
+}
+
+
+
+/* single-column layout */
+.single-column-layout article,
+.single-column-layout aside {
+    float: none;
+    width: 100%;
+    margin-left: 1.666666667%;
+    margin-right: 1.666666667%;
+}
+
+
+
+/* two-column layout: */
+.two-column-layout article {
+    float: left;
+    width: 63.333333333%;
+    margin-right: 1.666666667%;
+    margin-left: 1.666666667%;
+}
+.two-column-layout aside {
+    float: left;
+    width: 30%;
+    margin-left: 1.666666667%;
+    margin-right: 1.666666667%;
+}
+
+
+
+/* responsive layout: */
+@media screen and (max-width: 40em) {
+    .features section,
+    footer section,
+    .two-column-layout article,
+    .two-column-layout aside {
+        float: none;
+        width: 96.6666666667%;
+    }
+}
