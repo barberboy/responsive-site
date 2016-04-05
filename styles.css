@@ -1,73 +1,96 @@
 /* Typography: */
+
 body {
     font: 400 16px "Merriweather", "Georgia", serif;
     margin: 0;
 }
-h1,h2,h3,h4,h5,h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
 }
+
 header nav li {
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
     font-weight: 600;
 }
+
 a {
     text-decoration: none;
 }
 
 
 /* Colors: */
+
 header {
     background-color: #5fb9c8;
     padding: .8333333333333%;
 }
+
 footer {
     background-color: #bc6253;
     color: white;
 }
+
 a,
 footer a {
     color: #61bac9;
 }
+
 header a {
     color: white;
 }
+
 main {
     background-color: white;
 }
+
 footer h2,
 article h2 {
     border-bottom: 1px #ddd dotted;
 }
+
 header .tagline {
     color: #333;
 }
 
 
 /* Specific text features: */
+
 header .site-title {
     margin: 0;
     text-transform: none;
     font-size: 4.5em;
 }
+
 header .tagline {
     font-style: italic;
 }
+
 article .hero {
     width: 66.66666666667%;
     margin: 0 16.66666666667%;
 }
+
 article .hero p {
     font-size: 1.5em;
     font-style: italic;
 }
+
 article h1 {
     font-size: 3em;
 }
+
 main {
-    min-height: 50em;
+    min-height: 40em;
 }
+
 aside {
     margin-top: 8em;
 }
@@ -75,3 +98,74 @@ aside {
 
 /* Layout: */
 
+header {
+    text-align: center;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav li {
+    padding: 1em;
+}
+
+
+
+.content {
+    max-width: 50em;
+    margin: auto;
+}
+
+
+
+.features,
+footer .content {
+    display: flex;
+    justify-content: center;
+}
+
+.features section,
+footer section {
+    width: 30%;
+    margin: 1em 1.6666666666667%;
+}
+
+
+
+.two-column-layout main .content {
+    display: flex;
+}
+
+.two-column-layout article {
+    width: 63.333333333%;
+    margin-right: 1.666666667%;
+    margin-left: 1.666666667%;
+}
+
+.two-column-layout aside {
+    width: 30%;
+    margin-left: 1.666666667%;
+    margin-right: 1.666666667%;
+}
+
+
+
+@media screen and (max-width: 40em) {
+    header nav ul,
+    footer .content,
+    .features,
+    .two-column-layout main .content {
+        flex-direction: column;
+    }
+    .features section,
+    footer section,
+    .two-column-layout article,
+    .two-column-layout aside {
+        width: auto;
+    }
+}
