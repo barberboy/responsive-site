@@ -66,7 +66,7 @@ There isn't much content in the explanation for "Books", "Articles", and "Tools"
 
 ![Step 3: Floated features](./screenshots/responsive4.png)
 
-Hey, that looks so good! Let's also do that for the footer also. Instead of rewriting all of those rules, let's just update the CSS selector from the last declaration so those styles also apply to the 'section' elements inside the footer:
+Hey, that looks so good! Let's also do that for the footer as well. Instead of rewriting all of those rules, let's just update the CSS selector from the last declaration so those styles also apply to the 'section' elements inside the footer:
 
 <pre>.features section,  
 footer section {  
