@@ -66,7 +66,7 @@ There isn't much content in the explanation for "Books", "Articles", and "Tools"
 
 ![Step 3: Floated features](./screenshots/responsive4.png)
 
-Hey, that looks so good! Let's also do that for the footer also. Instead of rewriting all of those rules, let's just update the CSS selector from the last declaration so those styles also apply to the 'section' elements inside the footer:
+Hey, that looks so good! Let's also do that for the footer as well. Instead of rewriting all of those rules, let's just update the CSS selector from the last declaration so those styles also apply to the 'section' elements inside the footer:
 
 <pre>.features section,  
 footer section {  
@@ -150,7 +150,7 @@ This are looking pretty good now, but if you look at the page on a phone, you'll
 
 By default, mobile browsers like the iPhone set the viewport to be wide like a desktop browser. If we want our website to look at home on a mobile device, we need to add the "[Viewport Meta Tag](https://developer.apple.com/library/iOS/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html)".
 
-The viewport meta tag goes inside the <head> element in the HTML files. Add the following meta element on a new line *before* the closing &lt;/head&gt; tag in **index.html, books.html, articles.html, tools.html, and about.html**:
+The viewport meta tag goes inside the &lt;head&gt; element in the HTML files. Add the following meta element on a new line *before* the closing &lt;/head&gt; tag in **index.html, books.html, articles.html, tools.html, and about.html**:
 
     <meta name="viewport" content="width=device-width">
 
